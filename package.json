@@ -1,0 +1,37 @@
+{
+  "name": "rsby-linkhub",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:setup": "node scripts/setup-db.mjs",
+    "admin:create": "node scripts/create-admin.mjs",
+    "db:import": "node scripts/import-legacy.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "lucide-react": "0.453.0",
+    "mongodb": "^6.10.0",
+    "next": "14.2.35",
+    "qrcode": "^1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "server-only": "^0.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "^20.16.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.3"
+  },
+  "engines": { "node": ">=20" }
+}
